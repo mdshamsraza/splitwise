@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h2>splitwise</h2>
+            <div class="nav-itme">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                </div>
+            </div>
+    
+        </nav>
+    </header>
+    <!-- slider -->
+    <div>
+
+    </div>
+   <div class="slider-itmes">
+    <div>
+        <p class="btn-left" onclick="goPrev()"><i class="fa-solid fa-angle-left"></i></p>
+    </div>
+     <main class="main-slide">
+        <img src="/1.png" class="sliders" alt="">
+        <img src="/2.png" class="sliders" alt="">
+        <img src="/3.png" class="sliders" alt="">
+        <img src="/4.png" class="sliders" alt="">
+        <img src="/5.png" class="sliders" alt="">
+        
+     </main>
+     <div>
+        <p class="btn-right" onclick="goNext()"><i class="fa-solid fa-angle-right"></i></p>
+     </div>
+
+   </div>
+<section>
+        
+    <main class="main-container">
+    <div class="second-container">
+
+        <div class="user-field">
+            <div class="user-field-1">
+               <label for="input-1">Mr. Hasan </label>
+                <i id="click-field-1"  class="fa-solid fa-plus"> add</i>
+                <input id="input-1" type="text" name="" ><br>
+                <button id="button-1"  type="submit">submit</button>
+            </div>
+           
+            <div class="user-field-2">
+                <label for="input-2">Mr. Minhaad </label>
+                <i id="click-field-2" class="fa-solid fa-plus"> add</i>
+                <input id="input-2" type="text" name=""><br>
+                <button id="button-2" type="submit">Submit</button>
+            </div>
+
+            <div class="user-field-3">
+                <label for="input-3">Mr. Faizan</label>
+                <i id="click-field-3" class="fa-solid fa-plus"> add</i>
+                <input id="input-3" type="text" name=""><br>
+                <button id="button-3" type="submit">Submit</button>
+            </div>
+              
+            <div class="user-field-4">
+                <label for="input-4">Md Shams</label>
+                <i id="click-field-4" class="fa-solid fa-plus"> add</i>
+                <input id="input-4" type="text" name=""><br> 
+                <button id="button-4" type="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+</main>
+<hr style="margin-top: 1rem;">
+
+      <!-- user data collection -->
+
+    <div class="user-data">
+        
+        <div class="collect-data"> 
+            <div class=" collect-data-1">
+             <label class="input-1">H</label>
+             <h4>Total Amount <span id="collect-data-1"></span></h4>
+             <h4>Total Expenses</h4>
+            </div>
+
+            <div class=" collect-data-2">
+                <label class="input-2">M</label>
+                <h4>Total Amount <span id="collect-data-2"></span></h4>
+                <h4>Total Expenses</h4>
+            </div>  
+            <div class=" collect-data-3">
+                <label class="input-3">F</label>
+                <h4>Total Amount <span id="collect-data-3"></span></h4>
+                <h4>Total Expenses</h4>
+            </div>
+            <div class=" collect-data-4">
+                <label class="input-4">S</label>
+                <h4>Total Amount <span id="collect-data-4"></span></h4>
+                <h4>Total Expenses</h4>
+            </div>
+           
+        </div>  
+    </div>
+  
+    
+</section>
+
+<div style="display: flex; justify-content: space-evenly;">
+    <div class="total">
+        <button id="total" type="button" style="background-color:  rgb(40, 40, 40); color: white; border: none; cursor: pointer;">Total Amount</button>
+     </div>
+    <div class="total-amount">
+        <h2>Total = <span id="total-field">0</span
+        ></h2>
+        <br>
+        <br>
+        <h3 >Average = <span id="Average">0</span></h3>    
+    </div>
+</div>
+    
+
+
+     <script src="index.js"></script>
+</body>
+</html>
